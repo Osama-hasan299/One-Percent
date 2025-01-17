@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Sections</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #007bff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Container Styles */
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: white;
+            width: calc(25% - 20px); /* Four items in a row */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card label {
+            display: block;
+            font-size: 15px;
+            color: #4c4c4c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .product-card input {
+            background: #f3eeee;
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 16px;
+            border: 1px solid #ddd;
+        }
+
+        .product-card button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 16px;
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#watches">Watches</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#paintings">Paintings</a></li>
+    </ul>
+</nav>
+
+<!-- Watches Section -->
+<div class="section" id="watches">
+    <h1>Watches</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="watch1.jpg" alt="Watch 1">
+            <h2>Luxury Watch 1</h2>
+            <label>Price now: $500</label>
+            <label>Bin: $1000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="watch2.jpg" alt="Watch 2">
+            <h2>Luxury Watch 2</h2>
+            <label>Price now: $600</label>
+            <label>Bin: $1200</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="watch3.jpg" alt="Watch 3">
+            <h2>Luxury Watch 3</h2>
+            <label>Price now: $550</label>
+            <label>Bin: $1100</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="watch4.jpg" alt="Watch 4">
+            <h2>Luxury Watch 4</h2>
+            <label>Price now: $700</label>
+            <label>Bin: $1400</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- Cars Section -->
+<div class="section" id="cars">
+    <h1>Cars</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="car1.jpg" alt="Car 1">
+            <h2>Sports Car 1</h2>
+            <label>Price now: $20,000</label>
+            <label>Bin: $25,000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="car2.jpg" alt="Car 2">
+            <h2>Sports Car 2</h2>
+            <label>Price now: $22,000</label>
+            <label>Bin: $28,000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="car3.jpg" alt="Car 3">
+            <h2>Sports Car 3</h2>
+            <label>Price now: $18,000</label>
+            <label>Bin: $24,000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="car4.jpg" alt="Car 4">
+            <h2>Sports Car 4</h2>
+            <label>Price now: $25,000</label>
+            <label>Bin: $30,000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- Paintings Section -->
+<div class="section" id="paintings">
+    <h1>Paintings</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="painting1.jpg" alt="Painting 1">
+            <h2>Abstract Painting 1</h2>
+            <label>Price now: $500</label>
+            <label>Bin: $1000</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="painting2.jpg" alt="Painting 2">
+            <h2>Abstract Painting 2</h2>
+            <label>Price now: $600</label>
+            <label>Bin: $1200</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="painting3.jpg" alt="Painting 3">
+            <h2>Abstract Painting 3</h2>
+            <label>Price now: $550</label>
+            <label>Bin: $1100</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+        <div class="product-card">
+            <img src="painting4.jpg" alt="Painting 4">
+            <h2>Abstract Painting 4</h2>
+            <label>Price now: $700</label>
+            <label>Bin: $1400</label>
+            <input type="number" placeholder="Enter Number">
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get all the submit buttons
+        const buttons = document.querySelectorAll(".product-card button");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const productCard = this.parentElement; // Get the parent product card
+                const priceLabel = productCard.querySelector("label:nth-of-type(1)"); // Current price label
+                const inputField = productCard.querySelector("input"); // Input field
+
+                const currentPriceText = priceLabel.textContent.replace("Price now: $", "").replace(",", "");
+                const currentPrice = parseFloat(currentPriceText); // Parse current price
+                const bidValue = parseFloat(inputField.value); // Get the bid value
+
+                // Check if the bid is valid
+                if (isNaN(bidValue) || bidValue <= currentPrice) {
+                    alert("Please enter a valid bid higher than the current price.");
+                    return;
+                }
+
+                // Update the price and notify the user
+                priceLabel.textContent = `Price now: $${bidValue.toLocaleString()}`;
+                alert(`Your bid of $${bidValue.toLocaleString()} has been placed successfully!`);
+
+                // Clear the input field
+                inputField.value = "";
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
