@@ -1,1 +1,1 @@
-# One-Percent
+# One-Percent Auction Platform
